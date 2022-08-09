@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/style.css" type="text/css">
+    <title>AXEL NAMUJIMBO</title>
+    <script src="Js/script.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("0uPRzSCmtf0xz26Cq");
+        })();
+        </script>
+
+</head>
+
+<body>
+    <div id="container">
+
+        <header>
+            <h1 id="name">AXEL NAMUJIMBO</h1>
+
+            <ul id="navbar">
+                <li><button id="home" onclick="homeBtn()">HOME</button></li>
+                <li><button id="experiences" onclick="experiencesBtn()">EXPÉRIENCES</button></li>
+                <li><button id="projets" onclick="projetsBtn()">PROJETS</button></li>
+                <li><button id="contact" onclick="contactBtn()">CONTACT</button></li>
+            </ul>
+        </header>
+
+
+        <!-- Home Page -->
+
+        <div id="page-home">
+            <div id="titre-accueil">
+                <h1 class="">BIENVENUE SUR MON PORTFOLIO</h1>
+            </div>
+            <p>
+                Intégrateur & Développeur Web | Front-end
+            </p>
+
+
+        </div>
+
+
+        <!-- Experiences Page -->
+
+        <div id="page-experiences">
+            <div id="logiciels">
+                <button id="bouton-html" onclick="htmlBtn()"><img id="html" src="images/logiciels/Html.png"
+                        alt="Logo Html"></button>
+                <h1 id="html-text">
+                    Le HyperText Markup Language, généralement abrégé HTML ou, dans sa dernière version, HTML5, 
+                    est le langage de balisage conçu pour représenter les pages web. Ce langage permet : d’écrire de l’hypertexte, 
+                    d’où son nom, de structurer sémantiquement la page, de mettre en forme le contenu.
+                </h1>
+
+                <button id="bouton-css" onclick="cssBtn()"><img id="css" src="images/logiciels/Css.png"
+                        alt="Logo Css"></button>
+                <h1 id="css-text">
+                    Les feuilles de style en cascade, généralement appelées CSS de l'anglais Cascading Style Sheets, 
+                    forment un langage informatique qui décrit la présentation des documents HTML et XML. Les standards définissant 
+                    CSS sont publiés par le World Wide Web Consortium.
+                </h1>
+
+                <button id="bouton-javascript" onclick="jsBtn()"><img id="javascript"
+                        src="images/logiciels/JavaScript.png" alt="Logo JavaScript"></button>
+                <h1 id="javascript-text">
+                    JavaScript est un langage de programmation de scripts principalement employé dans les pages web interactives et 
+                    à ce titre est une partie essentielle des applications web. Avec les langages HTML et CSS, JavaScript est au cœur 
+                    des langages utilisés par les développeurs web.
+                </h1>
+
+                <button id="bouton-react" onclick="reactBtn()"><img id="react" src="images/logiciels/React.png"
+                        alt="Logo React"></button>
+                <h1 id="react-text">
+                    React est une bibliothèque JavaScript libre dont le but principal est de faciliter la création d'application web monopage, 
+                    via la création de composants dépendant d'un état et générant une page HTML à chaque changement d'état.
+                </h1>
+
+                <button id="bouton-git" onclick="gitBtn()"><img id="git" src="images/logiciels/Git.png"
+                        alt="Logo Git"></button>
+                <h1 id="git-text">
+                    Git est un système de contrôle de version distribué, gratuit et open source, conçu pour traiter tous les projets, des plus petits aux plus grands,
+                    avec rapidité et efficacité.
+                </h1>
+
+                <button id="bouton-visual-studio-code" onclick="visualStudioCodeBtn()"><img id="visual-studio-code"
+                        src="images/logiciels/Visualstudiocode.png" alt="Logo Visual Studio Code"></button>
+                <h1 id="visual-studio-code-text">
+                    Visual Studio Code est un éditeur de code extensible, ses fonctionnalités incluent la prise en charge du débogage,
+                    la mise en évidence de la syntaxe, la complétion intelligente du code, les snippets, la refactorisation du code et Git y est intégré.
+                </h1>
+
+            </div>
+
+            <h1 class="langages">
+                LANGAGES
+            </h1>
+
+        </div>
+
+
+        <!-- Projets Page -->
+
+        <div id="page-projets">
+            <div id="prog">
+
+                <div id="games">
+                    <div id="bouncy-ball">
+                        <h1><a href="https://aggsl.itch.io/bouncy-ball" target="_blank">Bouncy Ball</a></h1>
+
+                        <video controls width="250">
+                            <source src="/Videos/Games/Bouncy Ball The Game.mp4" type="video/mp4">
+                            Désolé, votre navigateur ne prend pas en charge les vidéos intégrées.
+                        </video>
+                    </div>
+
+                    <div id="randomy">
+                        <h1><a href="https://play.google.com/store/apps/details?id=com.randomy" target="_blank">Randomy (Mobile version)</a>
+                        </h1>
+
+                        <video controls width="250" height="250">
+                            <source src="/Videos/Games/Randomy The Game.mp4" type="video/mp4">
+                            Désolé, votre navigateur ne prend pas en charge les vidéos intégrées.
+                        </video>
+                    </div>
+                </div>
+
+                <div id="apps">
+                    <div id="pause-time-desktop">
+                        <h1><a href="http://pause-time.fr/" target="_blank">Pause Time <br> (Desktop version)</a></h1>
+
+                        <video controls width="250">
+                            <source src="/Videos/Apps/Pause Time The Desktop App.mp4" type="video/mp4">
+                            Désolé, votre navigateur ne prend pas en charge les vidéos intégrées.
+                        </video>
+                    </div>
+
+                    <div id="pause-time-mobile">
+
+                        <h1><a href="https://play.google.com/store/apps/details?id=com.pausetime" target="_blank">Pause
+                                Time <br> (Mobile version)</a></h1>
+                        <video controls width="250" height="250">
+                            <source src="/Videos/Apps/Pause Time The Mobile App.mp4" type="video/mp4">
+                            Désolé, votre navigateur ne prend pas en charge les vidéos intégrées.
+                        </video>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <h1 class="proj">
+                PROJETS
+            </h1>
+        </div>
+
+
+        <!-- Contact Page -->
+
+        <div id="page-contact">
+            <div class="contact_me">
+                <h1>CONTACTEZ - MOI</h1>
+                        <input type="email" id="fromName" class="adresse_email" size="80" placeholder="adresse e-mail" required> <br>
+                        <textarea id="msg" cols="100" rows="20" size="100" placeholder="Message" required></textarea> <br>
+                        <input onclick="sendMail()" type="submit" id="submit">
+                        <img src="Images/contacts/check.png" id="check" alt="check">
+            </div>
+            
+        </div>
+        <div id="contact-up">
+            <div class="gmail">
+                <a href="mailto:anamujimbo@gmail.com"><img class="gmail-image" src="images/contacts/Gmail.png" alt="Logo Gmail"></a><span><a
+                        href="mailto:anamujimbo@gmail.com">: anamujimbo@gmail.com</a></span>
+            </div>
+
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/axel-namujimbo-a38a67206/" target="_blank"><img class="linkedin-image" src="images/contacts/Linkedin.png" alt="Logo Linkedin"></a>
+                <span><a class="linkedin-name" href="https://www.linkedin.com/in/axel-namujimbo-a38a67206/"
+                        target="_blank">: Axel Namujimbo</a></span>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

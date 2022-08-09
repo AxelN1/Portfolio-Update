@@ -1,0 +1,591 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: rgb(34, 116, 116);
+    color: rgb(255, 255, 255);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#name {
+    margin-left: 50px;
+    font-size: 50px;
+    color: rgb(69, 34, 34);
+}
+
+#navbar {
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding-right: 20px;
+    list-style: none;
+}
+
+li {
+    height: 30px;
+}
+
+li button {
+    color: white;
+    padding-right: 40px;
+    background-color: transparent;
+    font-size: 20px;
+    border: 4px solid transparent;
+    height: 60px;
+}
+
+li #home:hover {
+    color: white;
+    cursor: pointer;
+}
+
+li #experiences:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+li #projets:hover {
+    color: red;
+    cursor: pointer;
+}
+
+li #contact:hover {
+    color: lime;
+    cursor: pointer;
+}
+
+#page-projets {
+    display: none;
+}
+
+#contact-up {
+    position: absolute;
+    top: 115px;
+    left: 84%;
+    display: none;
+    font-size: 20px;
+}
+
+.gmail a {
+    text-decoration: none;
+    color: black;
+}
+
+.linkedin a {
+    text-decoration: none;
+    color: black;
+}
+
+img.gmail-image {
+    width: 32px;
+}
+
+img.linkedin-image {
+    width: 32px;
+}
+
+#page-home {
+    background-color: rgb(148, 217, 193);
+    height: 478px;
+    margin-top: -10px;
+}
+
+#titre-accueil {
+    font-size: 35px;
+    text-align: center;
+    display: block;
+    padding-top: 70px;
+}
+
+p {
+    font-size: 44px;
+    text-align: center;
+}
+
+
+/* Page Experiences */
+
+#page-experiences {
+    margin-top: -10px;
+    display: none;
+    width: 100%;
+}
+
+.langages {
+    color: rgb(34, 116, 116);
+    display: block;
+    position: relative;
+    left: 30%;
+    bottom: 380px;
+    font-size: 90px;
+    text-align: center;
+}
+
+#logiciels {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 55%;
+    border: 4px solid yellow;
+    padding: 20px;
+    position: relative;
+    bottom: 0px;
+    left: 200px;
+    left: 5%;
+}
+
+/* Logo Logiciels */
+
+#logiciels button {
+    background-color: transparent;
+    background-color: white;
+    border-color: transparent;
+    width: 200px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#logiciels img#html {
+    width: 200px;
+}
+
+#logiciels #html-text {
+    background-color: rgb(204, 104, 28);
+
+    display: none;
+}
+
+#logiciels img#css {
+    width: 140px;
+}
+
+#logiciels #css-text {
+    background-color: rgb(37, 37, 176);
+    display: none;
+}
+
+#logiciels img#javascript {
+    width: 140px;
+    height: 160px;
+}
+
+#logiciels #javascript-text {
+    background-color: rgb(220, 220, 13);
+    color: black;
+    display: none;
+}
+
+#logiciels img#react {
+    width: 200px;
+}
+
+#logiciels #react-text {
+    background-color: rgb(60, 91, 156);
+    display: none;
+}
+
+#logiciels img#git {
+    width: 80px;
+    transform: rotate(-90deg);
+}
+
+#logiciels #git-text {
+    background-color: rgb(204, 104, 28);
+    display: none;
+}
+
+#logiciels img#visual-studio-code {
+    width: 140px;
+    height: 160px;
+}
+
+#logiciels #visual-studio-code-text {
+    background-color: rgb(34, 133, 172);
+    display: none;
+}
+
+#page-projets {
+    margin-top: -10px;
+    padding-left: 100px;
+}
+
+#prog {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#prog a {
+    color: rgb(34, 116, 116);
+    text-decoration: none;
+}
+
+.randomy {
+    margin-top: 100px;
+}
+
+.proj {
+    color: rgb(34, 116, 116);
+    display: block;
+    position: relative;
+    left: 30%;
+    bottom: 560px;
+    font-size: 90px;
+    text-align: center;
+}
+
+#page-contact {
+    display: none;
+    padding: 60px 40px;
+}
+
+
+.adresse_email {
+    color: white;
+    background-color: black;
+    background-color: rgb(34, 116, 116);
+    margin-bottom: 20px;
+
+    height: 30px;
+    border: none;
+    border: 2px solid wheat;
+}
+
+textarea {
+    color: white;
+    background-color: black;
+    background-color: rgb(34, 116, 116);
+    border: 2px solid wheat;
+    width: 750px;
+
+}
+
+#submit {
+    margin-top: 20px;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: 25px;
+}
+
+#check {
+    display: none;
+    width: 48px;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+::placeholder {
+    color: wheat;
+}
+
+.curauto {
+    cursor: default;
+}
+
+@media screen and (min-width: 3055px) {
+.langages {
+    position: relative;
+    left: 30%;
+    bottom: 200px;
+}
+
+#page-home {
+    height: 900px;
+}
+
+#name {
+    font-size: 120px;
+}
+
+li button {
+    font-size: 50px;
+    margin-top: 80px;
+}
+
+#titre-accueil {
+    font-size: 60px;
+}
+
+p {
+    font-size: 60px;
+}
+
+#page-experiences {
+    height: 600px;
+}
+
+#contact-up {
+    font-size: 40px;
+    margin-top: 3%;
+}
+
+.adresse_email {
+    color: white;
+    width: 950px;
+    height: 60px;
+    font-size: 30px;
+}
+
+textarea {
+    color: white;
+    width: 1450px;
+    height: 600px;
+    font-size: 30px;
+}
+}
+
+@media screen and (max-width: 1546px) {
+    .langages {
+        position: relative;
+        left: 30%;
+        bottom: 380px;
+    }
+}
+
+@media screen and (max-width: 1545px) {
+    .langages {
+        position: relative;
+        left: 30%;
+        bottom: 380px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    #name {
+        margin-left: 90px;
+        font-size: 60px;
+    }
+
+    #navbar {
+        color: blue;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-right: -4%;
+        list-style: none;
+    }
+
+    #contact-up {
+        position: absolute;
+        top: 140px;
+        display: none;
+        font-size: 20px;
+    }
+
+
+    #page-experiences {
+        width: 104%;
+    }
+
+    #page-home {
+        width: 104%;
+    }
+
+    #page-projets {
+        width: 104%;
+    }
+
+    .langages {
+        position: relative;
+        left: 90%;
+        bottom: 380px;
+        text-orientation: upright;
+        writing-mode: vertical-lr;
+        font-size: 40px;
+        background-color: rgb(147, 182, 182);
+    }
+
+    .proj {
+        display: inline;
+        position: relative;
+        left: 91%;
+        bottom: 560px;
+        text-orientation: upright;
+        writing-mode: vertical-lr;
+        font-size: 40px;
+        background-color: rgb(147, 182, 182);
+        ;
+    }
+}
+
+
+
+@media screen and (max-width: 1162px) {
+    .langages {
+        position: relative;
+        left: 90%;
+        bottom: 380px;
+    }
+}
+
+@media screen and (max-width: 1118px) {
+    .langages {
+        position: relative;
+        bottom: 590px;
+    }
+}
+
+@media screen and (max-width: 1116px) {
+    .langages {
+        position: relative;
+        bottom: 590px;
+    }
+}
+
+@media screen and (max-width: 1096px) {
+    #contact-up {
+        position: fixed;
+        left: 50%;
+        top: 105px;
+    }
+
+    .gmail a {
+        display: none;
+    }
+
+    .linkedin a {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 925px) {
+    #page-experiences {
+        width: 104%;
+    }
+
+    #page-projets {
+        width: 108%;
+    }
+
+    .langages {
+        position: relative;
+        left: 90%;
+        bottom: 590px;
+    }
+
+    .proj {
+        position: relative;
+        left: 91%;
+        top: 360px;
+    }
+
+    #name {
+        margin-left: 50px;
+        font-size: 40px;
+        color: rgb(69, 34, 34);
+    }
+
+    .adresse_email {
+        width: 300px;
+    }
+
+    textarea {
+        width: 400px;
+    }
+    
+    ::placeholder {
+        color: wheat;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+
+    #navbar {
+        margin-right: -4%;
+    }
+
+    #page-experiences {
+        width: 104%;
+    }
+
+    .proj {
+        position: relative;
+        left: 89%;
+        top: -580px;
+    }
+}
+
+@media screen and (max-width: 715px) {
+#titre-accueil {
+        font-size: 30px;
+    }
+
+    .langages {
+        display: none;
+    }
+
+    .proj {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 565px) {
+    #name {
+        font-size: 30px;
+        position: relative;
+        right: 10%;
+    }
+
+    li button {
+        font-size: 15px;
+        position: relative;
+        right: 20%;
+    }
+
+    #contact-up {
+        position: fixed;
+        left: 80%;
+    }
+
+    #titre-accueil {
+        font-size: 30px;
+    }
+
+    .langages {
+        position: fixed;
+        left: 58%;
+        bottom: 25%;
+    }
+
+    #page-projets {
+        color: red;
+    }
+
+    .proj {
+        position: fixed;
+        left: 88%;
+        bottom: 32%;
+    }
+
+}
+
+@media screen and (max-width: 456px) {
+    #page-home {
+        background-color: rgb(148, 217, 193);
+        height: 590px;
+        width: 135%;
+    }
+
+    #page-experiences {
+        width: 136%;
+    }
+
+    #page-projets {
+        width: 100%;
+    }
+
+}
